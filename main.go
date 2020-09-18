@@ -25,8 +25,8 @@ func main() {
 
 	contatos = append(contatos,
 		Contato{ID: 1, Nome: "Felipe Costa", Telefone: "555555555", Email: "costadefelipe@gmail.com"},
-		Contato{ID: 2, Nome: "Linda Gomes", Telefone: "555555555", Email: "gomeslinda@gmail.com"},
-		Contato{ID: 3, Nome: "Ruth Costa", Telefone: "549984958594", Email: "diamanteruth@gmai.com"})
+		Contato{ID: 2, Nome: "Henrique", Telefone: "555555555", Email: "gomeslinda@gmail.com"},
+		Contato{ID: 3, Nome: "Ruth", Telefone: "549984958594", Email: "diamanteruth@gmai.com"})
 
 	rota.HandleFunc("/contatos", getContatos).Methods("GET")
 	rota.HandleFunc("/contato/{id}", getContato).Methods("GET")
