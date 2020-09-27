@@ -1,13 +1,11 @@
 package main
 
-import (
+import (  		
      "net/http"
-     "fmt"
 )
 
 func testandoHandler(w http.ResponseWriter, r *http.Request){
-	w.Header().Set("Content-Type", "text/html")
-	fmt.Fprint(w, "<b><i><u>Testando</u></i></b>")
+	w.Write([]byte("Hello, World!"))
 }
 
 func main(){
